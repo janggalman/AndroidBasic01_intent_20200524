@@ -33,6 +33,33 @@
         android:layout_height="wrap_content"
         android:text="3번 액티비티로 이동" />
 
+    <EditText
+        android:id="@+id/contentFourthEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="폰번을 입력해 주세요" />
+
+    <Button
+        android:id="@+id/goToFourthBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4번 액티비티로 이동" />
+
+    <TextView
+        android:id="@+id/nickNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임 처리"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/editNickNameBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="닉네임 변경하러 가기" />
 
 
 </LinearLayout>

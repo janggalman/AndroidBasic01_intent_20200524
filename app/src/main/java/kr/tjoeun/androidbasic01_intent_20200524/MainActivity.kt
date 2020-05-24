@@ -32,8 +32,25 @@ class MainActivity : AppCompatActivity() {
 
             val myIntent = Intent( this , ThirdActivity::class.java)
             myIntent.putExtra("content", inputCotent)
+            myIntent.putExtra("number", 10)
             startActivity(myIntent)
         }
+
+//        폰번을 입력받어서, 네번째 액티비티 (FourthActivity)에서 출력
+
+        goToFourthBtn.setOnClickListener {
+
+            val inputContent = contentFourthEdt.text.toString()
+
+            val myIntent = Intent(this, FourthActivity::class.java)
+            myIntent.putExtra("content", inputContent)
+            startActivity(myIntent)
+        }
+
+        editNickNameBtn.setOnClickListener {
+
+        }
+
 
     }
 }
