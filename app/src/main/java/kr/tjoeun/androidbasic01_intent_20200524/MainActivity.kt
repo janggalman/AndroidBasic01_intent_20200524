@@ -26,5 +26,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(myIntent)
         }
 
+        goToThirdBtn.setOnClickListener {
+
+            val inputCotent = contentEdt.text.toString()
+
+            val myIntent = Intent( this , ThirdActivity::class.java)
+            myIntent.putExtra("content", inputCotent)
+            startActivity(myIntent)
+        }
+
     }
 }
